@@ -26,8 +26,7 @@ def check_site():
 		else:
 			return 0
 	except AttributeError:
-		send_mail()
-		return 1
+		print("Attribute Error")
 
 def send_mail():
 	server = smtplib.SMTP('smtp.gmail.com', 587)
